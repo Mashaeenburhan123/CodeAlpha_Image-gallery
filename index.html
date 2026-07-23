@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mashaeen's Gallery — Photo Gallery</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Mashaeen's Gallery · Selected works 2026</p>
+  <h1>Field notes in <em>light</em></h1>
+  <p class="sub">A running collection of frames from open roads, quiet rooms and city edges — sorted by mood, not by map.</p>
+</header>
+
+<nav class="filters" id="filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="nature">Nature</button>
+  <button class="filter-btn" data-filter="urban">Urban</button>
+  <button class="filter-btn" data-filter="portrait">Portrait</button>
+  <button class="filter-btn" data-filter="travel">Travel</button>
+  <span class="filter-count" id="filterCount"></span>
+</nav>
+
+<main class="gallery" id="gallery"></main>
+
+<footer>Mashaeen's Gallery — a photography journal</footer>
+
+<div class="lightbox" id="lightbox">
+  <span class="lb-counter" id="lbCounter"></span>
+  <button class="lb-close" id="lbClose" aria-label="Close">&#10005;</button>
+  <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#8592;</button>
+  <div class="lb-stage"><img id="lbImage" src="" alt=""></div>
+  <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#8594;</button>
+  <div class="lb-caption">
+    <p class="tile-index" id="lbIndex"></p>
+    <h3 id="lbTitle"></h3>
+    <p id="lbTag"></p>
+  </div>
+  <div class="lb-filmstrip" id="lbFilmstrip"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
